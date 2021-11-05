@@ -1,0 +1,61 @@
+.bg-text {
+  margin: 0;
+  font-size: 9em;
+  font-weight: 700;
+}
+
+.md-text {
+  margin: 0;
+  font-size: 5.7em;
+  font-weight: 400;
+}
+
+.sm-text {
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 400;
+}
+
+.ssm-text {
+  margin: 0;
+  font-size: 3.75em;
+  font-weight: 400;
+}
+
+.yellow-text {
+  color: #f5bf5a;
+}
+
+.gray-text {
+  color: #bab8b8;
+}
+
+.white-text {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1650px) {
+  .bg-text {
+    margin: 0;
+    font-size: 7.5em;
+    font-weight: 700;
+  }
+
+  .md-text {
+    margin: 0;
+    font-size: 4.2em;
+    font-weight: 400;
+  }
+
+  .sm-text {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 400;
+  }
+
+  .ssm-text {
+    margin: 0;
+    font-size: 2.25em;
+    font-weight: 400;
+  }
+}
