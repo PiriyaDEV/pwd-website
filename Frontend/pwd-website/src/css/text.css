@@ -34,6 +34,10 @@
   color: #ffffff;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1650px) {
   .bg-text {
     margin: 0;

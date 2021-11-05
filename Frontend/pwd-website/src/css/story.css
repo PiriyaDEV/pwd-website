@@ -1,0 +1,35 @@
+#story {
+  background-color: #262626;
+  padding-top: 65px;
+}
+
+.story-text {
+  letter-spacing: 14.4px;
+  text-align: center;
+}
+
+.white-bar {
+  margin-top: 15px;
+  border: 5px solid #ffffff;
+  width: 120px;
+}
+
+.story-content {
+  margin: 100px 0px 250px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.story-p {
+  margin-top: 40px;
+}
+
+#chair-img {
+  width: 400px;
+}
+
+#jobs-img {
+  width: 500px;
+}

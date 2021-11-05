@@ -33,9 +33,19 @@
 }
 
 #main-content {
-  margin-top: 200px;
+  margin: 165px 0px 180px 0px;
 }
 
 #arrow-down {
+  margin-top: 15px;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+#arrow-down > img {
   width: 20px;
+}
+
+#main-content > .md-text {
+  margin: 15px 0px 30px 0px;
 }

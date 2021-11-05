@@ -1,5 +1,6 @@
-import React from "react";
-import firebase from '../services/firebase';
+import React, { useState } from "react";
+import { collection, addDoc } from "firebase/firestore";
+import db from "../firebase";
 
 //CSS
 import "../css/page.css";
@@ -7,12 +8,27 @@ import "../css/text.css";
 import "../css/landing.css";
 
 //Image
-import BgImage from "../images/HomePhoto.png";
-import Arrow from "../images/Group 2@2x.png"
+import BgImage from "../images/MainPhoto@2x.png";
+import Arrow from "../images/Group 2@2x.png";
 
 export default function Landing() {
-  const createEmail = () => {
-    const emailRef = firebase.database().ref('')
+  const [email, setEmail] = useState("");
+
+  const handleOnChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  var today = new Date();
+  var date =
+    today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
+  var time =
+    today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+  var dateTime = date + " " + time;
+
+  const createEmail = async () => {
+    const collectionRef = collection(db, "mail");
+    const payload = {  email , dateTime };
+    await addDoc(collectionRef, payload);
   };
 
   return (
@@ -49,7 +65,20 @@ export default function Landing() {
             and respect other
           </h1>
           <h1 className="ssm-text white-text">Learn more about PWD</h1>
-          <img id="arrow-down" src={Arrow}></img>
+          <div id="arrow-down">
+            <img src={Arrow} alt=""></img>
+          </div>
+
+          <div className="section">
+            <input
+              className="ssm-text"
+              onChange={handleOnChange}
+              value={email}
+            />
+            <button className="ssm-text" onClick={createEmail}>
+              Send Email
+            </button>
+          </div>
         </div>
       </div>
     </div>
