@@ -1,6 +1,8 @@
 import React from "react";
+// import React,{ useEffect } from "react";
 
 import { Route, Switch } from "react-router-dom";
+// import ReactGA from "react-ga"
 
 import Landing from "./components/Landing";
 import Story from "./components/Story";
@@ -11,6 +13,9 @@ import TheirVoice from "./components/TheirVoice";
 import Contact from "./components/Contact";
 
 function App() {
+  // useEffect(() => {
+  //   ReactGA.initialize('G-9GVR0NFT3J')
+  // },[])
   return (
     <div>
       <Switch>
