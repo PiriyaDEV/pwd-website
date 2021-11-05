@@ -6,14 +6,20 @@
   background-position: center center;
 }
 
+.navbar-container {
+  justify-content: space-between !important;
+}
+
 #navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
 }
 
 #menu > h1 {
   margin: 0px 40px;
+  text-shadow: 0px 3px 6px #00000029;
+  cursor: pointer;
 }
 
 #home-box > .sm-text {
@@ -30,6 +36,8 @@
 #member-box {
   border: 2px solid #ffffff;
   padding: 8px 15px;
+  text-shadow: 0px 3px 6px #00000029;
+  cursor: pointer;
 }
 
 #main-content {

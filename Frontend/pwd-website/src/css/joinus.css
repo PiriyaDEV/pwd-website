@@ -1,0 +1,54 @@
+#joinus {
+  padding: 200px 0px;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#girl-img {
+  width: 400px;
+  margin-right: 45px;
+}
+
+#join-box {
+  box-shadow: 0px 0px 30px #0000006c;
+  width: fit-content;
+  padding: 80px 50px;
+  background-color: #FFFFFF;
+}
+
+#join-btn {
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#join-btn > input {
+  background: #e6e6e6 0% 0% no-repeat padding-box;
+  border: none;
+  padding: 8px 15px;
+}
+
+#join-btn > button {
+  background: #ffbd41 0% 0% no-repeat padding-box;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.join-desc {
+  word-wrap: break-word;
+  width: 330px;
+  margin-top: 40px;
+}
+
+.alert {
+  margin-top: 10px;
+  color: #ffbd41;
+}

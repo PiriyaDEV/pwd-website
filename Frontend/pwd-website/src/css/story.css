@@ -15,15 +15,16 @@
 }
 
 .story-content {
-  margin: 100px 0px 250px 0px;
+  margin: 100px 0px 200px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
 }
 
 .story-p {
   margin-top: 40px;
+  line-height: 36px;
 }
 
 #chair-img {
@@ -31,5 +32,21 @@
 }
 
 #jobs-img {
-  width: 500px;
+  width: 400px;
 }
+
+.pwd-billion {
+  margin-top: 15px;
+}
+
+#chartdiv{
+  z-index: 99;
+  width: 200%;
+  height: 500px;
+}
+
+.story-head{
+  color: #FFBD41;
+  margin-top: 30px;
+}
+

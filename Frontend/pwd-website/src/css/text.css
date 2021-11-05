@@ -22,6 +22,24 @@
   font-weight: 400;
 }
 
+.xsm-text {
+  margin: 0;
+  font-size: 2.25em;
+  font-weight: 400;
+}
+
+.voice-head {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+.voice-desc {
+  margin: 0;
+  font-size: 1.65em;
+  font-weight: 400;
+}
+
 .yellow-text {
   color: #f5bf5a;
 }
@@ -35,7 +53,11 @@
 }
 
 .bold {
-  font-weight: 700;
+  font-weight: 700 !important;
+}
+
+.semi-bold {
+  font-weight: 600 !important;
 }
 
 @media screen and (max-width: 1650px) {
@@ -60,6 +82,24 @@
   .ssm-text {
     margin: 0;
     font-size: 2.25em;
+    font-weight: 400;
+  }
+
+  .xsm-text {
+    margin: 0;
+    font-size: 1.75em;
+    font-weight: 400;
+  }
+
+  .voice-head {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 400;
+  }
+  
+  .voice-desc {
+    margin: 0;
+    font-size: 1.5em;
     font-weight: 400;
   }
 }
