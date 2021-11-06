@@ -35,6 +35,10 @@
   width: 400px;
 }
 
+.img-mb {
+  display: none;
+}
+
 .pwd-billion {
   margin-top: 15px;
 }
@@ -43,6 +47,10 @@
   z-index: 99;
   width: 150%;
   height: 500px;
+}
+
+.img-mb {
+  display: none;
 }
 
 .story-head {
@@ -67,16 +75,34 @@
 
 @media screen and (max-width: 767px) {
   #chair-img {
-    width: 280px;
+    width: 250px;
+    padding: 15px 0px;
   }
 
   #jobs-img {
     width: 280px;
+    padding: 15px 0px;
   }
 
   #chartdiv {
     width: 100%;
     height: 320px;
+  }
+
+  .img-pc {
+    display: none;
+  }
+
+  .img-mb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 30px 0px;
+  }
+
+  .story-p {
+    margin-top: 0px;
+    line-height: 36px;
   }
 
   .story-content {
@@ -90,18 +116,20 @@
 
   .story-content {
     margin: 100px 0px 100px 0px;
+    gap: 30px;
+    grid-gap: 30px;
   }
 
   .story-head {
     margin-top: 40px;
   }
+
+  .header {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 414px) {
-  .header{
-    text-align: center;
-  }
-
   #chair-img {
     width: 200px;
   }

@@ -111,6 +111,9 @@ export default function Story() {
             <h1 className="md-text white-text bold header">
               WHO ARE PEOPLE WITH DISABILITY OR PWD?
             </h1>
+            <div className="img-mb">
+              <img id="chair-img" src={Chair} alt=""></img>
+            </div>
             <p className="ssm-text white-text story-p">
               According to United Nations Convention on the Rights of Persons
               With Disabilities (CPRD), PWDs include those who have long-term
@@ -119,13 +122,13 @@ export default function Story() {
               effective participation in society on an equal basis with others.
             </p>
           </div>
-          <div>
+          <div className="img-pc">
             <img id="chair-img" src={Chair} alt=""></img>
           </div>
         </div>
 
         <div className="story-content">
-          <div>
+          <div className="img-pc">
             <img id="jobs-img" src={Jobs} alt=""></img>
           </div>
           <div>
@@ -136,6 +139,9 @@ export default function Story() {
               THEY ARE <span className="yellow-text">OVER 1 BILLION</span> OF
               PWD ALL OVER THE WORLD
             </h1>
+            <div className="img-mb">
+              <img id="jobs-img" src={Jobs} alt=""></img>
+            </div>
             <p className="ssm-text white-text story-p">
               According to United Nations Convention on the Rights of Persons
               With Disabilities (CPRD), PWDs include those who have long-term
@@ -148,7 +154,7 @@ export default function Story() {
 
         <div className="story-content reverse-cl">
           <div>
-            <h1 className="md-text white-text bold header">
+            <h1 className="md-text white-text bold header img-pc">
               PEOPLE WITH DISABILITY IN THAILAND
             </h1>
             {targetPie === "Mobility" ? (
@@ -172,6 +178,9 @@ export default function Story() {
             )}
           </div>
           <div id="chartdiv"></div>
+          <h1 className="md-text white-text bold header img-mb">
+            PEOPLE WITH DISABILITY IN THAILAND
+          </h1>
         </div>
       </div>
     </div>
