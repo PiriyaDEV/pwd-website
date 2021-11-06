@@ -24,6 +24,15 @@
   padding: 20px;
 }
 
-.contact-p{
-    padding: 8px 0px;
+.contact-p {
+  padding: 8px 0px;
+}
+
+@media screen and (max-width: 767px) {
+  #contact-container {
+    display: block;
+  }
+  #contact-container > div:not(:last-child) {
+    margin-bottom: 35px;
+  }
 }

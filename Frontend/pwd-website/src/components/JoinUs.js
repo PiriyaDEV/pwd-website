@@ -49,8 +49,8 @@ export default function JoinUs() {
               <img id="girl-img" src={Girl} alt=""></img>
             </div>
             <div>
-              <h1 className="sm-text">Be one of us to promote</h1>
-              <h1 className="md-text bold">Inclusive Society</h1>
+              <h1 className="sm-text join-center">Be one of us to promote</h1>
+              <h1 className="md-text bold join-center">Inclusive Society</h1>
 
               <div id="join-btn">
                 <input

@@ -106,9 +106,9 @@ export default function Story() {
 
         <hr className="white-bar"></hr>
 
-        <div className="story-content">
+        <div className="story-content reverse-cl">
           <div>
-            <h1 className="md-text white-text bold">
+            <h1 className="md-text white-text bold header">
               WHO ARE PEOPLE WITH DISABILITY OR PWD?
             </h1>
             <p className="ssm-text white-text story-p">
@@ -129,10 +129,10 @@ export default function Story() {
             <img id="jobs-img" src={Jobs} alt=""></img>
           </div>
           <div>
-            <h1 className="md-text white-text bold">
+            <h1 className="md-text white-text bold header">
               WHY CARE ABOUT <span className="yellow-text">PWD</span> ?
             </h1>
-            <h1 className="ssm-text white-text bold pwd-billion">
+            <h1 className="ssm-text white-text bold pwd-billion header">
               THEY ARE <span className="yellow-text">OVER 1 BILLION</span> OF
               PWD ALL OVER THE WORLD
             </h1>
@@ -146,9 +146,9 @@ export default function Story() {
           </div>
         </div>
 
-        <div className="story-content">
+        <div className="story-content reverse-cl">
           <div>
-            <h1 className="md-text white-text bold">
+            <h1 className="md-text white-text bold header">
               PEOPLE WITH DISABILITY IN THAILAND
             </h1>
             {targetPie === "Mobility" ? (

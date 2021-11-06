@@ -93,7 +93,7 @@ export default function News() {
               </p>
             </div>
           </div>
-          <div>
+          <div id="small-news-section">
             {news.map((x, i) =>
               i > 0 ? (
                 <div className="small-news">
@@ -107,7 +107,7 @@ export default function News() {
                   </div>
                   <div>
                     <h1
-                      className="sm-text bold clickable"
+                      className="sm-text bold clickable small-header"
                       onClick={() => openLink(news[i].link)}
                     >
                       {news[i].name}

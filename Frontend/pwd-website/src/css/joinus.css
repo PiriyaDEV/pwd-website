@@ -14,7 +14,7 @@
   box-shadow: 0px 0px 30px #0000006c;
   width: fit-content;
   padding: 80px 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 #join-btn {
@@ -51,4 +51,44 @@ input:focus {
 .alert {
   margin-top: 10px;
   color: #ffbd41;
+}
+
+@media screen and (max-width: 1110px) {
+  #girl-img {
+    width: 330px;
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  #join-box {
+    flex-direction: column;
+    width: 100%;
+    padding: 80px 25px;
+  }
+
+  #girl-img {
+    width: 280px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .join-center {
+    text-align: center;
+  }
+  #joinus {
+    padding: 100px 0px;
+  }
+
+  .join-desc {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #girl-img {
+    width: 200px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
 }

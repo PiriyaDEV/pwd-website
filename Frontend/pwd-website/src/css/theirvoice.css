@@ -21,7 +21,8 @@
 .voice-box {
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 30px #0000006b;
-  padding: 50px 30px;
+  padding: 50px 70px;
+  height: 230px;
 }
 
 .voice-bar {
@@ -44,4 +45,46 @@
 #voice-box-section {
   margin-top: 75px;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 1650px) {
+  .voice-box {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 30px #0000006b;
+    padding: 50px 30px;
+    height: initial;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  #voice-box-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .voice-box:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .voice-box {
+    width: 80%;
+  }
+
+  .voice-p {
+    width: 100%;
+  }
+
+  #theirvoice {
+    padding: 120px 0px 170px 0px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .voice-box {
+    width: 80%;
+  }
+
+  #theirvoice {
+    padding: 60px 0px 80px 0px;
+  }
 }

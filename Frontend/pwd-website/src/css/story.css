@@ -39,14 +39,79 @@
   margin-top: 15px;
 }
 
-#chartdiv{
+#chartdiv {
   z-index: 99;
   width: 150%;
   height: 500px;
 }
 
-.story-head{
-  color: #FFBD41;
+.story-head {
+  color: #ffbd41;
   margin-top: 30px;
 }
 
+@media screen and (max-width: 1100px) {
+  #chair-img {
+    width: 320px;
+  }
+
+  #jobs-img {
+    width: 320px;
+  }
+
+  #chartdiv {
+    width: 120%;
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #chair-img {
+    width: 280px;
+  }
+
+  #jobs-img {
+    width: 280px;
+  }
+
+  #chartdiv {
+    width: 100%;
+    height: 320px;
+  }
+
+  .story-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reverse-cl {
+    flex-direction: column-reverse !important;
+  }
+
+  .story-content {
+    margin: 100px 0px 100px 0px;
+  }
+
+  .story-head {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header{
+    text-align: center;
+  }
+
+  #chair-img {
+    width: 200px;
+  }
+
+  #jobs-img {
+    width: 200px;
+  }
+
+  #chartdiv {
+    width: 100%;
+    height: 280px;
+  }
+}
