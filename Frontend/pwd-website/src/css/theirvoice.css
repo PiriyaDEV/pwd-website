@@ -62,6 +62,10 @@
     flex-direction: column;
   }
 
+  #theirvoice {
+    background-attachment: initial;
+  }
+
   .voice-box:not(:last-child) {
     margin-bottom: 30px;
   }
