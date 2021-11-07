@@ -50,7 +50,7 @@ export default function Story() {
         color: am4core.color("#f1b969"),
       },
       {
-        ability: "Autism ",
+        ability: "Autism",
         number: 12297,
         color: am4core.color("#fd8b46"),
       },
@@ -58,16 +58,6 @@ export default function Story() {
         ability: "Learning problems",
         number: 10133,
         color: am4core.color("#f5a1e3"),
-      },
-      {
-        ability: "More than one type of disability",
-        number: 128682,
-        color: am4core.color("#7defa9"),
-      },
-      {
-        ability: "Waiting for confirmation",
-        number: 8075,
-        color: am4core.color("#fad46b"),
       },
     ];
 
@@ -153,26 +143,84 @@ export default function Story() {
         </div>
 
         <div className="story-content reverse-cl">
-          <div>
+          <div id="pie-section">
             <h1 className="md-text white-text bold header img-pc">
               PEOPLE WITH DISABILITY IN THAILAND
             </h1>
-            {targetPie === "Mobility" ? (
+            {targetPie === "Mobility" && (
               <div className="transition">
-                <h1 className="md-text story-head bold">MOBILITY 49.8%</h1>
+                <h1 className="md-text story-head bold">MOBILITY 53.3%</h1>
                 <p className="ssm-text white-text story-p">
                   A mobility impairment is a disability that affects movement
                   ranging from gross motor skills, such as walking, to fine
                   motor movement, involving manipulation of objects by hand.
                 </p>
               </div>
-            ) : (
+            )}
+            {targetPie === "Hearing" && (
               <div className="transition">
-                <h1 className="md-text story-head bold">HEARING 18.4%</h1>
+                <h1 className="md-text story-head bold">HEARING 19.7%</h1>
                 <p className="ssm-text white-text story-p">
-                  Hearing loss can have a significant effect on your quality of
-                  life. Older adults with hearing loss may report feelings of
-                  depression.
+                  Hearing impaired is often used to describe people with any
+                  degree of hearing loss, from mild to profound, including those
+                  who are deaf and those who are hard of hearing.
+                </p>
+              </div>
+            )}
+            {targetPie === "Visually" && (
+              <div className="transition">
+                <h1 className="md-text story-head bold">VISUALLY 10.7%</h1>
+                <p className="ssm-text white-text story-p">
+                  Visual impairment is a term use to describe any kind of vision
+                  loss, whether it's someone who cannot see at all or someone
+                  who has partial vision loss. Some people are completely blind,
+                  but many others have what's called legal blindness.
+                </p>
+              </div>
+            )}
+            {targetPie === "Physically" && (
+              <div className="transition">
+                <h1 className="md-text story-head bold">PHYSICALLY 7.9%</h1>
+                <p className="ssm-text white-text story-p">
+                  A physical impairment is a condition in which a part of a
+                  person's body is damaged or is not working properly resulting
+                  in not being able to perform without assistance two, or
+                  sometimes three, of the six basic activities of daily living.
+                </p>
+              </div>
+            )}
+            {targetPie === "Psychologic" && (
+              <div className="transition">
+                <h1 className="md-text story-head bold">PSYCHOLOGICAL 7.1%</h1>
+                <p className="ssm-text white-text story-p">
+                  psychological disorder is more frequently known as mental
+                  disorders. They are patterns of behavioral or psychological
+                  symptoms that impact multiple areas of life. These disorders
+                  create distress for the person experiencing these symptoms.
+                </p>
+              </div>
+            )}
+            {targetPie === "Autism" && (
+              <div className="transition">
+                <h1 className="md-text story-head bold">AUTISM 0.6%</h1>
+                <p className="ssm-text white-text story-p">
+                  Autism, or autism spectrum disorder (ASD), refers to a broad
+                  range of conditions characterized by challenges with social
+                  skills, repetitive behaviors, speech and nonverbal
+                  communication.
+                </p>
+              </div>
+            )}
+            {targetPie === "Learning problems" && (
+              <div className="transition">
+                <h1 className="md-text story-head bold">
+                  LEARNING PROBLEM 0.5%
+                </h1>
+                <p className="ssm-text white-text story-p">
+                  learning disability, such as dyslexia or dyscalculia, it
+                  doesn’t mean that they are slow or dumb. Learning problems
+                  happen because of the way the brain takes in and processes
+                  information. As a result, some people learn differently.
                 </p>
               </div>
             )}
