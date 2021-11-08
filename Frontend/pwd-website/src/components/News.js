@@ -89,7 +89,12 @@ export default function News() {
               <h1 className="xsm-text date bold">01 Nov 2021</h1>
               <p className="xsm-text">
                 {news[0].description}{" "}
-                <span className="readmore semi-bold">....Read more</span>
+                <span
+                  className="readmore semi-bold"
+                  onClick={() => openLink(news[0].link)}
+                >
+                  ....Read more
+                </span>
               </p>
             </div>
           </div>
