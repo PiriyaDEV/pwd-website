@@ -101,7 +101,7 @@ export default function News() {
           <div id="small-news-section">
             {news.map((x, i) =>
               i > 0 ? (
-                <div className="small-news">
+                <div className="small-news" key={i}>
                   <div>
                     <img
                       className="small-img clickable"
